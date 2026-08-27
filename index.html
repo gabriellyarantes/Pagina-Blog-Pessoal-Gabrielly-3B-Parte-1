@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema e Cultura Brasileira</title>
     <style>
-        header{
+        header {
             background-color: rgb(243, 243, 231);
             color: black;
             text-align: center;
@@ -13,12 +13,43 @@
             margin: 0 auto;
             padding: 10px;
         }
-        main{
+        main {
             background-color: rgb(243, 243, 231);
             color: black;
             margin: auto;
             padding: 12px;
-            max-width: 900px;
+            max-width: 1000px;
+        }
+
+        /* Alinhamento das imagens rente ao texto */
+        article {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        article img {
+            width: 320px;
+            max-width: 40%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        article div {
+            flex: 1;
+        }
+
+        /* Adaptabilidade para telas menores */
+        @media (max-width: 768px) {
+            article {
+                flex-direction: column;
+            }
+            article img {
+                width: 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -29,7 +60,7 @@
     </header>
     <main>
         <article>
-            <img src="img1.png">
+            <img src="img1.png" alt="Colagem sobre cinema e música brasileira">
             <div>
                 <h2>Recomendações de Filmes</h2>
                 <p class="artigo">Por: Gabrielly S. Arantes</p>
@@ -45,14 +76,14 @@
                     <li>9º - <b>Carandiru (2003):</b> Dirigido por Hector Babenco, retrata a rotina, as histórias de vida e a humanidade dos detentos na Casa de Detenção de São Paulo. A narrativa é contada sob o ponto de vista de um médico que trabalha no local e culmina no trágico massacre de 1992.</li>
                     <li>10º - <b>O Agente Secreto (2025):</b> Um filme de drama, suspense e thriller político brasileiro, dirigido e escrito por Kleber Mendonça Filho.</li>
                 </ul>
-                 <button>🔥​<span>0</span></button>
+                <button>🔥​<span>0</span></button>
                 <button>😿​<span>0</span></button>
                 <button>😾​<span>0</span></button>
             </div>
         </article>
 
         <article>
-            <img src="img2.png">
+            <img src="img2.png" alt="Colagem da cultura brasileira">
             <div>
                 <h2>A Multiplicidade da Cultura Nacional Brasileira: Etnia, Música, Cinema e Esporte na Literatura Acadêmica</h2>
                 <h3>Etnia, Música, Cinema e Esporte na Literatura Acadêmica</h3>
@@ -71,16 +102,13 @@ Esporte: Investigações na antropologia do esporte (com destaque para Roberto D
 </p>
 <p>Dados Bibliográficos: FREYRE, Gilberto. Casa-Grande & Senzala: Formação da família brasileira sob o regime da economia patriarcal. Rio de Janeiro: Maia & Schmidt, 1933, RIBEIRO, Darcy. O Povo Brasileiro: A formação e o sentido do Brasil. São Paulo: Companhia das Letras, 1995,TATIT, Luiz. O Cancionista: Composição de Canções no Brasil. São Paulo: EdUSP, 1996, TINHORÃO, José Ramos. História Social da Música Popular Brasileira. São Paulo: Editora 34, 1998, TINHORÃO, José Ramos. História Social da Música Popular Brasileira. São Paulo: Editora 34, 1998, XAVIER, Ismail. O Cinema Brasileiro Moderno. São Paulo: Paz e Terra, 2001, DAMATTA, Roberto (Org.). Universo do Futebol: Esporte e Sociedade Brasileira. Rio de Janeiro: Pinakotheke, 1982, FLORENZANO, José Paulo. Afonsinho e Edmundo: A rebeldia no futebol brasileiro. São Paulo: Musa Editora, 1998.           
 </p>
-                 <button>🔥​<span>0</span></button>
+                <button>🔥​<span>0</span></button>
                 <button>😿​<span>0</span></button>
                 <button>😾​<span>0</span></button>
             </div>
-            
         </article>
     </main>
-    <footer>
-        
-    </footer>
+    <footer></footer>
 </body>
 <script>
     const botoes = document.querySelectorAll("button");
@@ -90,7 +118,6 @@ Esporte: Investigações na antropologia do esporte (com destaque para Roberto D
         botao.addEventListener("click", botaoClicado);
 
         function botaoClicado() {
-            console.log("fui clicado");
             let texto = botao.querySelector("span");
 
             if (curtiu === false) {
@@ -100,11 +127,6 @@ Esporte: Investigações na antropologia do esporte (com destaque para Roberto D
                 texto.textContent--;
                 curtiu = false;
             }
-        }
-    });
-</script>
-</html>
-
         }
     });
 </script>
