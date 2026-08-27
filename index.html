@@ -21,7 +21,7 @@
             max-width: 1000px;
         }
 
-        /* Alinhamento das imagens rente ao texto */
+        /* Layout em flexbox para deixar imagens rente aos textos */
         article {
             display: flex;
             align-items: flex-start;
@@ -35,13 +35,14 @@
             height: auto;
             border-radius: 8px;
             object-fit: cover;
+            flex-shrink: 0;
         }
 
         article div {
             flex: 1;
         }
 
-        /* Adaptabilidade para telas menores */
+        /* Responsividade para telas menores */
         @media (max-width: 768px) {
             article {
                 flex-direction: column;
@@ -89,66 +90,62 @@
                 <h3>Etnia, Música, Cinema e Esporte na Literatura Acadêmica</h3>
                 <p class="artigo">Por: Gabrielly S. Arantes</p>
                 <p>1. Matrizes Étnicas e Formação Identitária -
-A literatura sociológica e antropológica brasileira estabelece a formação étnica como a base estruturante da cultura nacional. Pesquisas clássicas e contemporâneas (como as de Darcy Ribeiro e Gilberto Freyre) apontam que a identidade do país deriva do choque e da fusão entre as matrizes indígena, africana e europeia. Os dados acadêmicos mostram que a mestiçagem não gerou uma homogeneidade passiva, mas sim um campo de tensão, resistência e reinvenção constante, no qual o sincretismo religioso e a pluralidade linguística tornaram-se marcas centrais da sociedade.
-
-2. Manifestações Culturais e Práticas Corporais -
+A literatura sociológica e antropológica brasileira estabelece a formação étnica como a base estruturante da cultura nacional. Pesquisas clássicas e contemporâneas (como as de Darcy Ribeiro e Gilberto Freyre) apontam que a identidade do país deriva do choque e da fusão entre as matrizes indígena, africana e europeia. Os dados acadêmicos mostram que a mestiçagem não gerou uma homogeneidade passiva, mas sim um campo de tensão, resistência e reinvenção constante, no qual o sincretismo religioso e a pluralidade linguística tornaram-se marcas centrais da sociedade.</p>
+                <p>2. Manifestações Culturais e Práticas Corporais -
 As produções artísticas e as práticas esportivas funcionam na pesquisa acadêmica como espelhos das dinâmicas étnico-sociais brasileiras:
 
 Música: Estudos de sociomusicologia (como os de Luiz Tatit e José Ramos Tinhorão) posicionam o samba, a bossa nova e as manifestações percussivas como espaços fundamentais de preservação da memória afro-brasileira e de mediação urbana. A música é mapeada como o principal vetor de exportação e afirmação da identidade nacional.
 
 Cinema: A historiografia do cinema nacional (liderada por teóricos como Ismail Xavier) estuda desde o Cinema Novo até as produções contemporâneas. A análise cinematográfica foca em como as telas traduzem as assimetrias sociais, a estética da periferia e a busca por uma linguagem audiovisual autêntica e descolonizada.
 
-Esporte: Investigações na antropologia do esporte (com destaque para Roberto DaMatta) interpretam o futebol e a capoeira como rituais de drama social. O estilo de jogo brasileiro é teorizado como uma extensão da plasticidade cultural, onde a ginga e a improvisação refletem estratégias históricas de sobrevivência e afirmação corporal.
-</p>
-<p>Dados Bibliográficos: FREYRE, Gilberto. Casa-Grande & Senzala: Formação da família brasileira sob o regime da economia patriarcal. Rio de Janeiro: Maia & Schmidt, 1933, RIBEIRO, Darcy. O Povo Brasileiro: A formação e o sentido do Brasil. São Paulo: Companhia das Letras, 1995,TATIT, Luiz. O Cancionista: Composição de Canções no Brasil. São Paulo: EdUSP, 1996, TINHORÃO, José Ramos. História Social da Música Popular Brasileira. São Paulo: Editora 34, 1998, TINHORÃO, José Ramos. História Social da Música Popular Brasileira. São Paulo: Editora 34, 1998, XAVIER, Ismail. O Cinema Brasileiro Moderno. São Paulo: Paz e Terra, 2001, DAMATTA, Roberto (Org.). Universo do Futebol: Esporte e Sociedade Brasileira. Rio de Janeiro: Pinakotheke, 1982, FLORENZANO, José Paulo. Afonsinho e Edmundo: A rebeldia no futebol brasileiro. São Paulo: Musa Editora, 1998.           
-</p>
+Esporte: Investigações na antropologia do esporte (com destaque para Roberto DaMatta) interpretam o futebol e a capoeira como rituais de drama social. O estilo de jogo brasileiro é teorizado como uma extensão da plasticidade cultural, onde a ginga e a improvisação refletem estratégias históricas de sobrevivência e afirmação corporal.</p>
+                <p>Dados Bibliográficos: FREYRE, Gilberto. Casa-Grande & Senzala: Formação da família brasileira sob o regime da economia patriarcal. Rio de Janeiro: Maia & Schmidt, 1933; RIBEIRO, Darcy. O Povo Brasileiro: A formação e o sentido do Brasil. São Paulo: Companhia das Letras, 1995; TATIT, Luiz. O Cancionista: Composição de Canções no Brasil. São Paulo: EdUSP, 1996; TINHORÃO, José Ramos. História Social da Música Popular Brasileira. São Paulo: Editora 34, 1998; XAVIER, Ismail. O Cinema Brasileiro Moderno. São Paulo: Paz e Terra, 2001; DAMATTA, Roberto (Org.). Universo do Futebol: Esporte e Sociedade Brasileira. Rio de Janeiro: Pinakotheke, 1982; FLORENZANO, José Paulo. Afonsinho e Edmundo: A rebeldia no futebol brasileiro. São Paulo: Musa Editora, 1998.</p>
                 <button>🔥​<span>0</span></button>
                 <button>😿​<span>0</span></button>
                 <button>😾​<span>0</span></button>
             </div>
         </article>
-    </main>
 
-    <article>
-            <img src="img3.png">
+        <article>
+            <img src="img3.png" alt="Música Popular Brasileira">
             <div>
                 <h2>Música Popular Brasileira (MPB)</h2>
                 <h3>Top 5 Artistas Nacionais</h3>
                 <p class="artigo">Por: Gabrielly S. Arantes</p>
                 <ul>
-    <li>1º - <b>Tom Jobim:</b> Um dos criadores da Bossa Nova e compositor de clássicos globais como "Garota de Ipanema".</li>
-    <li>2º - <b>Elis Regina:</b> Considerada uma das maiores e mais expressivas vozes da história da Música Popular Brasileira (MPB).</li>
-    <li>3º - <b>Caetano Veloso:</b> Co-fundador do movimento Tropicalista e um dos compositores mais influentes da cultura nacional.</li>
-    <li>4º - <b>Gilberto Gil:</b> Ícone da Tropicália, vencedor de múltiplos prêmios Grammy e mestre do ritmo e da poesia brasileira.</li>
-    <li>5º - <b>Jorge Ben Jor:</b> Pioneiro na fusão de samba, funk e rock, autor de sucessos globais como "Mas, Que Nada!".</li>
-</ul>
+                    <li>1º - <b>Tom Jobim:</b> Um dos criadores da Bossa Nova e compositor de clássicos globais como "Garota de Ipanema".</li>
+                    <li>2º - <b>Elis Regina:</b> Considerada uma das maiores e mais expressivas vozes da história da Música Popular Brasileira (MPB).</li>
+                    <li>3º - <b>Caetano Veloso:</b> Co-fundador do movimento Tropicalista e um dos compositores mais influentes da cultura nacional.</li>
+                    <li>4º - <b>Gilberto Gil:</b> Ícone da Tropicália, vencedor de múltiplos prêmios Grammy e mestre do ritmo e da poesia brasileira.</li>
+                    <li>5º - <b>Jorge Ben Jor:</b> Pioneiro na fusão de samba, funk e rock, autor de sucessos globais como "Mas, Que Nada!".</li>
+                </ul>
                 <button>🔥​<span>0</span></button>
                 <button>😿​<span>0</span></button>
                 <button>😾​<span>0</span></button>
             </div>
-            
         </article>
     </main>
     <footer></footer>
-</body>
-<script>
-    const botoes = document.querySelectorAll("button");
 
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
+    <script>
+        const botoes = document.querySelectorAll("button");
 
-        function botaoClicado() {
-            let texto = botao.querySelector("span");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
 
-            if (curtiu === false) {
-                texto.textContent++;
-                curtiu = true;
-            } else {
-                texto.textContent--;
-                curtiu = false;
+            function botaoClicado() {
+                let texto = botao.querySelector("span");
+
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
             }
-        }
-    });
-</script>
+        });
+    </script>
+</body>
 </html>
